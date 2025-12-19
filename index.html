@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Datos personales</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #ffe6ee;
+        padding: 30px;
+    }
+
+    .contenedor{
+        width: 350px;
+    }
+
+    input{
+        width: 100%;
+        padding: 6px;
+        margin: 6px 0 12px 0;
+        box-sizing: border-box;
+    }
+
+    
+    .btn{
+        background-color: #d81b60;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+
+    .btn:hover{
+        background-color: #ad1457;
+    }
+
+    .resultado{
+        background: white;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 6px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h2>Datos personales</h2>
+
+    <input type="text" id="nombreCompleto" placeholder="Nombre y apellido">
+
+    <input type="date" id="fechaNac">
+
+    <input type="text" id="genero" placeholder="Género (masculino o femenino)">
+
+    <input type="text" id="sangre" placeholder="Tipo de sangre">
+
+    <input type="text" id="altura" placeholder="Altura en pulgadas">
+
+    <input type="text" id="peso" placeholder="Peso en kg">
+
+    <button class="btn" onclick="mostrar()">VER INFORMACIÓN</button>
+
+    <div class="resultado" id="resultado"></div>
+
+</div>
+
+
+<script src="codigo.js"></script>
+
+</body>
+</html>
